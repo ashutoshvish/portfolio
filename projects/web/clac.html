@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+	<link rel="icon" type="text/css" href="../../images/icon.png">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background-color:#000;
+		}
+		
+		.formstyle{
+			width: 238px;
+			height: 361px;
+			position: absolute;
+			top:250px;
+			left: 200px;
+			transform: translate(-50%,-50%);
+			background:linear-gradient(0deg,#000,#343333);
+		}
+		.formstyle:before,
+		.formstyle:after{
+			content: '';
+			position: absolute;
+			left: -2px;
+			top:-2px;
+			background:linear-gradient(45deg,#fb0094,#0000ff,#ffff00,#ff0000,#fb0094,#0000ff,#ffff00,#ff0000);
+			background-size: 400%;
+			width: calc(100% + 4px);
+			height: calc(100% + 4px);
+			z-index: -1;
+			animation: animate 20s linear infinite;
+		}
+		.formstyle:after{
+			filter: blur(10px);
+		}
+		@keyframes animate{
+			0%{
+				background-position: 0 0;
+			}
+			50%{
+				background-position: 400% 0;
+			}
+
+    		100%{
+				background-position: 0 0;
+			}
+
+		}
+		input{
+
+			width: 60px;
+			height: 30px;
+		}
+		form{
+			padding: 10px;
+		}
+		.content{
+			width: 91.5%;
+			height: 94.5%;
+			padding: 10px;
+			position: relative;
+			background:linear-gradient(0deg,#000,#343333);
+			/*border:2px solid transparent;*/
+		}
+		#ansid{
+			width: 190px;
+		}
+		#cls{
+			width: 190px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div class="title">
+		<marquee behavior="alternate" scrollamount="40"><h1><u>Calculator - Service one</u></h1>
+		</marquee>
+	</div>
+	
+	</div>
+
+	<div class="formstyle">
+		<div class="content">
+		<form name="forms" id=" formcl">
+			<input type="text" name="answer" id="ansid"><br><br>
+
+			<input type="button" value="1" onclick="forms.answer.value += '1' ">
+			<input type="button" value="2" onclick="forms.answer.value += '2' ">
+			<input type="button" value="3" onclick="forms.answer.value += '3' ">
+			<br><br>
+			<input type="button" value="4" onclick="forms.answer.value += '4' ">
+			<input type="button" value="5" onclick="forms.answer.value += '5' ">
+			<input type="button" value="6" onclick="forms.answer.value += '6' ">
+			<br><br>
+			<input type="button" value="7" onclick="forms.answer.value += '7' ">
+			<input type="button" value="8" onclick="forms.answer.value += '8' ">
+			<input type="button" value="9" onclick="forms.answer.value += '9' ">
+			<br><br>
+			<input type="button" value="+" onclick="forms.answer.value += '+' ">
+			<input type="button" value="-" onclick="forms.answer.value += '-' ">
+			<input type="button" value="*" onclick="forms.answer.value += '*' ">
+			<br><br>
+			<input type="button" value="/" onclick="forms.answer.value += '/' ">
+			<input type="button" value="0" onclick="forms.answer.value += '0' ">
+			<input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value) ">
+			<br><br>
+			<input type="button" id = "cls"value="Clear all" onclick="forms.answer.value = '' ">
+			
+		</form>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+
+	<p class="codepen" data-height="625" data-theme-id="dark" data-default-tab="html,result" data-user="ashutoshvish" data-slug-hash="ZEeGjNr" data-preview="true" style="height: 625px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Online Calculator(web)- AshutoshV">
+  <span>See the Pen <a href="https://codepen.io/ashutoshvish/pen/ZEeGjNr">
+  Online Calculator(web)- AshutoshV</a> by developer.ashutoshvish@gamil.com (<a href="https://codepen.io/ashutoshvish">@ashutoshvish</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+*{
+	font-family: sans-serif;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background:#333;
+}
+.skills{
+	width: 500px;
+	margin:60px auto;
+	color:white;
+	background:#333;
+}
+.skills li{
+	margin:35px 0;
+
+}
+.skills li h3{
+	margin: 5
+}
+.bar{
+	background:#353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+	height: 2px; 
+	float: left;
+	background:#2187e7;
+}
+.html{
+	width: 90%;
+	animation:html 2s;
+}
+.css{
+	width: 60%;
+	animation:css 2s;
+}
+.js{
+	width: 40%;
+	animation:js 2s;
+}
+.java{
+	width: 45%;
+	animation:java 2s;
+}
+.php{
+	width: 15%;
+	animation:php 2s;
+}
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 75%;
+	}
+}
+@keyframes css{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 60%;
+	}
+}
+@keyframes js{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 40%;
+	}
+}
+@keyframes java{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 45%;
+	}
+}
+@keyframes php{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 15%;
+	}
+}

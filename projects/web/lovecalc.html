@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love Calculator</title>
+	<link rel="icon" type="text/css" href="../../images/icon.png">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		.mainbg{
+			background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("love.jpg");
+			width: 100%;
+			height: 100vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.content{
+			width: 450px;
+			height: 310px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-color: transparent;
+		}
+		.content .c-header,.c-footer,.c-body{
+			color: white;
+		}
+		.c-header{
+			width: 450px;
+			height: 40px;
+			text-align: center;
+			font-family:arial;
+			font-size: 1.5em;
+			color:white;
+			line-height: 40px;
+			background-color:#FD055D;
+		}
+		.c-body{
+			width: 450px;
+			height: 70%;
+			background-color:rgba(255,255,255,0.1);
+			align-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		#name1,#lname{
+			height: 35px;
+			margin-top: 35px;
+			width: 170px;
+			border-radius: 7px;
+			border-style: none;
+			text-align: center;
+		}
+		
+		#plus{
+			color: black;
+		}
+		.btn{
+			margin-top: 60px;
+			width: 150px;
+			height: 32px;
+			background-color:#068BFC;
+			color: white;
+			border-style: none;
+			border-radius: 3px;
+		}
+		#loveper{
+
+			margin-top: 10px;
+			width: 100px;
+			height: 32px;
+			border-style: none;
+			text-align: center;
+			border-radius: 12px;
+		}
+		.c-footer{
+			width: 450px;
+			height: 40px;
+			background-color:rgba(224,224,224,0.8);
+			color: black;
+			font-size: 18px;
+			line-height: 40px;
+			text-align: center;
+
+		}
+		.notice{
+			background: black;
+			color: white;
+			font-family: candara , sans-serif;
+			text-shadow: none;
+			padding:10px;
+		}
+		.imageLink{
+			width: 100%;
+			text-align: center;
+			background-color: white;
+			padding: 20px;
+		}
+	
+
+	</style>
+</head>
+<body>
+	<div class="mainbg">
+ 	<div class="content">
+ 		<header>
+		    <div class="c-header">Love Calculator</div>
+	    </header>
+
+		<div class="c-body">
+
+			<input type="text" id="name1" class="form-control" placeholder="YourName">
+			<span id="plus">+</span>
+			<input type="text" id="lname" class="form-control" placeholder="LoveName">
+
+			<button class="btn" onclick="myfun()">Click</button>
+
+			<br>
+			<input type="text" id="loveper" placeholder="LovePercentage" readonly>
+
+		</div>
+
+
+		<footer>
+		 	<div class="c-footer">God Bless Your RelationShip</div>
+		</footer>
+    </div>
+</div>
+<br>
+
+	<p class="codepen" data-height="637" data-theme-id="dark" data-default-tab="css,result" data-user="ashutoshvish" data-slug-hash="MWpwqGP" style="height: 637px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="MWpwqGP">
+  <span>See the Pen <a href="https://codepen.io/ashutoshvish/pen/MWpwqGP">
+  MWpwqGP</a> by developer.ashutoshvish@gamil.com (<a href="https://codepen.io/ashutoshvish">@ashutoshvish</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<div class="imageLink">
+	<a href="https://drive.google.com/drive/folders/1H9VDfdIPZInFM1T2el9KzSvEIF_ZadPb?usp=sharing" class="imageLink">Download the images from here</a></div>
+	<P class="notice">The CodePen is not able to show the background image, please go and download the background image and save the project in your PC and link those images correctly in the CSS File and run on your browser.</P>
+
+
+
+<script type="text/javascript">
+	function myfun() 
+	{
+		var name = document.getElementById('name1').value;
+		var lname = document.getElementById('lname').value;
+
+		if(name== ""){
+			alert("Please enter Your Name");
+		}
+		else if(name.lenght<=2){
+			alert("Minimum length should be 3");
+		}
+		else if(!isNaN(name))
+		{
+			alert("numbers are not allowed");
+		}
+
+
+		else if(lname== ""){
+			alert("Please enter Your Name");
+		}
+		else if(lname.lenght<=2){
+			alert("Minimum length should be 3");
+		}
+		else if(!isNaN(lname))
+		{
+			alert("numbers are not allowed");
+		}
+
+
+		else{
+		var num = Math.random()*100;
+		num = Math.floor(num);
+		document.getElementById('loveper').value=
+		num+"%";
+		}
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color:#3d3d3d;
+}
+.frame{
+	margin:40px auto;
+	width: 80%;
+	height: 600px;
+	background-color: #f1faee;
+	display: flex;
+	border-bottom-right-radius: 50px;
+}
+.icon{
+	width: 16%;
+    height: 8%;
+}
+.icon img{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.left{
+	/*flex-direction: row;*/
+	background-color:#023e8a;
+	max-width: 35%;
+	color:white;
+	}
+.right{
+	flex-direction: column;
+	border-bottom-right-radius: 50px;
+	display:flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+.right img{
+	margin-left:8;
+	width: 100%;
+	height: 80%;
+	/*border:3px solid white;*/
+}
+.mat{
+	display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    padding-top: 10px;
+    height: 75%;
+    flex-direction: column;
+
+}
+.hi{
+	font-size: 32px;
+	font-family: 'Roboto', sans-serif;
+}
+.name{
+	font-size: 70px;
+	color:white;
+	width: 170%;
+	font-family: 'Ubuntu', sans-serif;
+	overflow: overlay;
+}
+
+.des{
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+}
+.logos ul{
+	width: 100%;
+}
+.logos{
+	display: flex;
+	justify-content: center;
+	padding:5% 15%;
+	border:2px solid black;
+}
+.logos li{
+	width: 30%;
+	list-style: none;
+	flex-direction: column;
+	
+}
+.yt{
+	padding: 8px;
+}
+
+.mail{
+	padding:8px;
+}
+
+.web{
+	padding: 8px;
+}
+.contactme{
+	position: absolute;
+	top: 550px;
+}
+.contactme a{
+	text-decoration: none;
+	padding: 6px 18px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background:black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.certificates h1{
+	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 25px auto;
+}
+
+.certificates{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+	flex-direction: column-reverse;
+}
+
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+	<link rel="stylesheet" type="text/css" href="skills.css">
+	<link rel="icon" type="text/css" href="../images/icon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=1244">
+<body>
+	<div class="frame">
+		<div class="left">
+				<div class="icon">
+					<img src="../images/icon.png" alt="icon here">
+				</div>
+				<div class="mat">
+				<p class="hi">Hi</p>
+				<p class="name">I'm Ashutosh</p>
+				<!-- <p class="des">A programmer and a web developer .</p> -->
+				<div class="text des">
+            		I am a <span class="type des"></span>
+        			</div>
+			</div>
+				<div class="logos">
+					<ul>
+						<span class="yt">
+							<img src="https://img.icons8.com/doodle/50/000000/youtube--v1.png" 
+							onclick="yt()" target="_blank"/>
+							<!-- <a href="https://www.google.com"></a> -->
+						</span>
+						<span class="mail">
+							<a href="mailto:developer.ashutoshvish@gmail.com">
+							<img src="https://img.icons8.com/clouds/48/000000/apple-mail.png"/>
+							</a>
+						</span>
+						<span class="web">
+							<a href="../index.html">
+							<img src="https://img.icons8.com/wired/48/000000/domain.png"/>
+							</a>
+						</span>
+					</ul>
+				
+			</div>
+		</div>
+		<div class="right">
+			<img src="../images/side.jpeg" alt="myself">
+			<p class="contactme">
+				<a href="mailto:developer.ashutoshvish@gmail.com">Contact me</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="skills">
+		<h1>My Skills</h1>
+		<li>
+			<h3>JAVA</h3>
+			<span class="bar">
+				<span class="java"></span>
+			</span>
+		</li>
+		<li>
+			<h3>HTML5</h3>
+			<span class="bar">
+				<span class="html"></span>
+			</span>
+		</li>
+		<li>
+			<h3>CSS3</h3>
+			<span class="bar">
+				<span class="css"></span>
+			</span>
+		</li>
+		<li>
+			<h3>JAVASCRIPT</h3>
+			<span class="bar">
+				<span class="js"></span>
+			</span>
+		</li>
+
+		<li>
+			<h3>PHP</h3>
+			<span class="bar">
+				<span class="php"></span>
+			</span>
+		</li>
+
+	</div>
+
+	<div class="certificates">
+		<h1>Some of my Certificates</h1>
+
+		<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://www.sololearn.com/Certificate/1068-14121184/jpg/" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.sololearn.com/Certificate/1024-14121184/jpg/" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.sololearn.com/Certificate/1068-14121184/jpg/" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.sololearn.com/Certificate/1024-14121184/jpg/" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+	</div>
+	<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+	<script type="text/javascript">
+		function yt() {
+			window.open("https://www.youtube.com/channel/UCVvFPQpvyhKHps_Oh7tAANQ","_blank");
+		}
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  	<script>
+        var typed = new Typed('.type', {
+    strings: ['Programmer.', 'Web developer.'],
+    typeSpeed:70,
+    backSpeed:70,
+    loop:true,
+    });
+    </script>
+
+</body>
+</html>

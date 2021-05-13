@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Game</title>
+	<link rel="icon" type="text/css" href="../../images/icon.png">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			width: 100%;
+			height: 100vh;
+			/*background-image: url("dice-image/image5.jpg");*/
+			background:linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+			background-size: cover;
+		}
+		.profile img{
+			width:200px;
+			height: 200px;
+			position: absolute;
+			top:2px;
+			left:2px; 
+			border:3px solid transparent;
+			border-image:linear-gradient(0deg,#ff0,#f0f);
+			border-image-slice:1;
+		}
+		.profile::after{
+			position: absolute;
+			left: 4%;
+			top:208px; 
+			content:"Developer Ashutosh";
+			border:3px solid black;
+		}
+		.container{
+		    width: 60%;
+			margin: auto;
+			align-items: center;
+			text-align: center;
+
+		}
+		.heading{
+			width: 100%;
+			color: #A31203;
+			text-align: center;
+			font-size:24px;
+			font-family: Segoe Print;
+			text-shadow: 5px 2px white;
+			margin: 12px;
+			font-style:bold;
+		}
+		.result{
+			color:#EFEA95;
+			font-family:Trebuchet MS;
+			font-size: 30px;
+			font-style:italic;
+			text-align: center;
+		}
+		.dice{
+			text-align: center;
+			display: inline-block;
+		}
+		p{
+			font-size: 2rem;
+			font-family: gabriola;
+			text-shadow:  2px 1px white;
+			text-align: center;
+		}
+		.dice img{
+			align-self: center;
+			width:195px; 
+			height: 200px;
+			border-radius:25%;
+			padding: 20px;
+		}
+		
+		button{
+
+			font-family: gabriola;
+			width: 70px;
+			height: 30px;
+			padding: 0px;
+			border-radius: 5px;
+			font-size: 20px;
+			background-color: #00b894;
+			color:white;
+			border:none;
+		}
+		.notice{
+			background: black;
+			color: white;
+			font-family: candara , sans-serif;
+			text-shadow: none;
+			padding:10px;
+		}
+		.imageLink{
+			width: 100%;
+			text-align: center;
+			background-color: white;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="profile">
+			<a href="ashutoshv.myartsonline.com">
+			<img src="dice-image/logo.png">
+		</a>
+		</div>
+		<div class="heading"><H1><u>Ashutosh Dice Game</u> :)</H1></div>
+		<div class="result"><H2 id = "res">Result</H2></div>
+		
+		<div class="dice">
+			<p>You</p>
+			<img src="dice-image\p1.jpg" id="check1">
+		</div>
+		<div class="dice">
+			<p>Computer</p>
+			<img src="dice-image\p6.jpg" id="check2">
+		</div>
+		<div>
+			<button onclick="myfun()">Click me</button>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<p class="codepen" data-height="576" data-theme-id="dark" data-default-tab="html,result" data-user="ashutoshvish" data-slug-hash="qBrdMRz" style="height: 576px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="qBrdMRz">
+  <span>See the Pen <a href="https://drive.google.com/drive/folders/18RY-KvPcqMMtOLUDMtaQID8TvjTTxPW5">
+  qBrdMRz</a> by developer.ashutoshvish@gamil.com (<a href="https://codepen.io/ashutoshvish">@ashutoshvish</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+	<div class="imageLink">
+	<a href="https://drive.google.com/drive/folders/1H9VDfdIPZInFM1T2el9KzSvEIF_ZadPb?usp=sharing" class="imageLink">Download the images from here</a></div>
+	<P class="notice">The CodePen is not able to show the correct form of the page, please go and download the images and save the project in your PC and link those images correctly in the HTML File and run on your browser.</P>
+
+
+	<script type="text/javascript">
+
+		function myfun() {
+		const play1 = Math.floor(Math.random()*6)+1;
+		const player1dice = "dice-image/p"+play1+".jpg";
+		document.getElementById('check1').setAttribute('src',player1dice);
+
+
+		const play2 = Math.floor(Math.random()*6)+1;
+		const player2dice = "dice-image/p"+play2+".jpg";
+		document.getElementById('check2').setAttribute('src',player2dice);
+
+
+	if(play1>play2)
+	{
+		document.getElementById('res').innerHTML = "You Won:)";
+	}
+
+	else if(play1<play2)
+	{
+		document.getElementById('res').innerHTML = "Computer Won:)";
+	}
+
+	else{
+		document.getElementById('res').innerHTML="!Match Draw!";
+	}
+}
+
+
+	</script>
+
+</body>
+</html>

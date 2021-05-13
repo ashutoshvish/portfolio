@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body{
+	font-family: roboto;
+	background: #23074d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	height: 100vh;
+	color: white;
+
+	/*display: grid;
+	place-items:center;
+	/*align-items:center;*/
+
+	font-size: 0.9em;
+
+}
+/*#0703fa*/
+.cards{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: row;
+}
+.gradient{
+	position: absolute;
+	background-image: linear-gradient(0deg,#4a4a4a,transparent);
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+.time{
+	position: absolute;
+	bottom: 0;
+	padding:2rem;
+	font-size: 10px;
+}
+.card{
+	position:  relative;
+	background-color: rgba(255,255,255,.1);
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+	height: 400px;
+	width: 270px;
+	margin: 50px;
+}
+.photo{
+	width: 100%;
+	height: 40%;
+	background:url("../../images/onlinecalc.jpg");
+	background-size: cover;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	opacity: 0.4;
+}
+.photo2{
+	width: 100%;
+	height: 40%;
+	background:url("../../images/diceGame.jpg");
+	background-size: cover;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	opacity: 0.4;
+}
+.photo3{
+	width: 100%;
+	height: 40%;
+	background:url("../../images/loveCalc.jpg");
+	background-size: cover;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	opacity: 0.4;
+}
+
+
+.card:hover .gradient{
+	opacity: 1;
+}
+.info{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	padding: 2rem;
+	margin-top: 3rem;
+
+}
+.text{
+	color: rgb(211,211,211);
+}
+.title{
+	font-size: 2.2em;
+	font-weight: 700;
+}
+@media only screen and (max-width: 1200px) {
+	.cards{
+		flex-direction: column;
+	}
+	}
