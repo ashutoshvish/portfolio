@@ -454,7 +454,7 @@ hr{
 	font-family: sans-serif;
 	padding: 0;
 	list-style: none;
-	width: 500px;
+/* 	width: 500px; */
 	margin:60px auto;
 	color:white;
 	background:#333;
