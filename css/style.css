@@ -7,7 +7,9 @@
 
 html{
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+}
+body{
+
 }
 .logo{
 	width: 15%;
@@ -378,6 +380,9 @@ hr{
 }
 
 @media only screen and (max-width: 1111px) {
+	*{
+		overflow-x: hidden;
+	}
   .nav-list{
   	flex-direction: column;
   }
@@ -454,14 +459,20 @@ hr{
 	font-family: sans-serif;
 	padding: 0;
 	list-style: none;
-/* 	width: 500px; */
+	width: 80%;
+	width: 80%;
 	margin:60px auto;
 	color:white;
 	background:#333;
 }
 .skills li{
-	margin:35px 0px;
-	padding:10px 150px;
+	/*margin:35px 0px;
+	padding:10px 150px;*/
+
+
+    margin: 35px 0px;
+    padding: 10px 60px;
+
 }
 .skills h1{
 	text-align: center;
